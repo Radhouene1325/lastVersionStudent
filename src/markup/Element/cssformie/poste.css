@@ -1,0 +1,213 @@
+.post {
+  width: 117%;
+  margin: 27px -43px;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.post .postWrapper {
+  padding: 20px;
+}
+.post .postWrapper .postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post .postWrapper .postTop .postTopLeft {
+  display: flex;
+  align-items: center;
+}
+.post .postWrapper .postTop .postTopLeft .postProfileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #2e55fa;
+  cursor: pointer;
+}
+.post .postWrapper .postTop .postTopLeft .postUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.post .postWrapper .postTop .postTopLeft .postDate {
+  font-size: 12px;
+}
+.post .postWrapper .postTop .postTopRight .postVertButton {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+.post .postWrapper .postCenter {
+  margin: 20px 0;
+  word-break: break-word;
+}
+.post .postWrapper .postCenter .postImg {
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.post .postWrapper .postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post .postWrapper .postBottom .postBottomLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post .postWrapper .postBottom .postBottomLeft .bottomLeftIcon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.post .postWrapper .postBottom .postBottomLeft .postLikeCounter {
+  font-size: 15px;
+}
+.post .postWrapper .postBottom .postBottomRight .postCommentText {
+  font-size: 15px;
+  cursor: pointer;
+}
+.post .postWrapper .footerHr {
+  margin: 10px 0;
+  height: 2px;
+}
+.post .postWrapper .postBottomFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post .postWrapper .postBottomFooter .postBottomFooterItem {
+  display: flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.post .postWrapper .postBottomFooter .postBottomFooterItem .footerIcon {
+  color: #333;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.post .postWrapper .postBottomFooter .postBottomFooterItem .footerText {
+  font-weight: 500;
+}
+.post .postWrapper .postBottomFooterItem:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.post .commentBox {
+  display: flex;
+}
+.post .commentBox .commentInput {
+  display: flex;
+  flex: 1;
+  width: 75%;
+  background: transparent;
+  color: black;
+  border: 1px solid #011631;
+  padding: 10px 5px 0px 5px;
+  margin: 0px 0px 20px 20px;
+  outline: none;
+}
+.post .commentBox .commentPost {
+  display: flex;
+  padding: 10px 25px;
+  background-color: #011631;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 20px 20px 0px;
+  border: none;
+  cursor: pointer;
+}
+.post .commentBox .commentPost:disabled {
+  cursor: not-allowed;
+  background-color: rgba(1, 22, 49, 0.6431372549);
+}
+.post .comment {
+  width: 100%;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-left: 14px;
+}
+.post .comment .commentWrapper {
+  display: flex;
+  margin: auto;
+}
+.post .comment .commentWrapper .commentProfileImg {
+  display: flex;
+  margin: 20px 7px 20px 10px;
+  width: 40px;
+  height: 35px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.post .comment .commentWrapper .commentInfo {
+  max-width: 80%;
+}
+.post .comment .commentWrapper .commentInfo .commentUsername {
+  font-weight: 600;
+  cursor: pointer;
+}
+.post .comment .commentWrapper .commentInfo .commentText {
+  background-color: #f0f2f5;
+  color: #191513;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 0.9375rem;
+  border-radius: 30px 30px 30px 30px;
+}/*# sourceMappingURL=poste.css.map */
+
+
+
+@media all and (max-width:500px){
+  .post .postWrapper .postBottomFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+
+@media all and (max-width:300px){
+  .post .postWrapper .postBottomFooter {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .max300{
+    display: none;
+   
+  }
+  .post .postWrapper .postTop .postTopLeft .postUsername {
+    font-size: 74%;
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .post .postWrapper .postTop .postTopLeft .postProfileImg{
+    width: 100%;
+    height: 22%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2e55fa;
+    cursor: pointer;
+    margin-left: -40%;
+
+  }
+  .post .postWrapper .postTop .postTopLeft .postDate {
+    font-size: 54%;
+  }
+
+
+}

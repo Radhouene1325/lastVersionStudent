@@ -1,0 +1,314 @@
+.posts {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+
+
+
+
+.create {
+  /* width: 80%; */
+  margin: 15px -31px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.create__first {
+  display: flex;
+  width: 100%;
+
+}
+
+.create__first-img {
+  width: 11%;
+  height: 10%;
+  /* position: absolute;
+  top: 16px; */
+  /* margin-top: -9px;
+  height: 43px; */
+}
+
+.create__first-img span {
+  /* display: inline-block; */
+  /* width: 45px;
+  height: 45px;
+  border-radius: 50%; */
+  overflow: hidden;
+}
+
+.create__first-img span img {
+  /* width: 100%;
+  height: 140%;
+  margin-top: -4px; */
+  object-fit: cover;
+  margin-top: 6px; 
+}
+
+.create__first-input {
+  /* width: 88%;
+  min-width: 88%; */
+}
+
+.create__first-inputs {
+  width: 100%;
+  min-width: 90%;
+  display: table-cell;
+  padding: 15px 20px;
+  border: none;
+  background: #f0f2f5;
+  border-radius: 30px;
+  outline: none;
+  word-break: break-word;
+}
+
+.text[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #555;
+  font-family: sans-serif;
+ 
+
+}
+
+.commentaireinput[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #555;
+  font-family: sans-serif;
+  margin-left: 27px;
+
+
+}
+
+.create__second {
+  width: 100%;
+  border-top: 1px solid #f0f2f5;
+  margin-top: 12px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create__second-icon {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 7px;
+}
+
+.redColor {
+  color: #e72173;
+  font-size: 23px;
+}
+
+.greenColor {
+  color: #2aec4a;
+  font-size: 23px;
+}
+
+.orangeColor {
+  color: #f8f525;
+  font-size: 23px;
+}
+
+.soucoment {
+  display: none;
+}
+
+.block {
+  display: none;
+}
+
+.none {
+  display: block;
+}
+
+.cmtResposev {
+  display: none;
+}
+.createFormAvatar {
+  height: 68%;
+  width: 91%;
+}
+
+@media all and (max-width:500px) {
+  .cmtresponsiv {
+    /* width: 91%;
+    margin-left: -16px; */
+    position: relative;
+  }
+  .max300{
+    display: none;
+  }
+  .icon{
+    left: 77%;
+    top: 20%;
+    width: 11%;
+  }
+  .lastcomment{
+    display: none;
+  }
+  /* .createFormAvatar {
+    margin-block-start: auto;
+    display: none;
+  } */
+
+  .create__first-img {
+    margin-right: auto;
+  }
+
+  .postBottomFooter {
+    flex-direction: column;
+  }
+
+  .commentWrapper {}
+
+  .none {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .insidecomment {
+    display: none;
+    display: flow-root;
+  }
+
+  .cmtresponsivemobil {
+    position: fixed;
+  }
+
+  .autreresponsiv {
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .responsivinput {
+    /* max-width: 19rem; */
+  }
+
+  .post .comment {
+    /* display: list-item; */
+    /* display: flow-root; */
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    margin-left: -9px;
+  }
+
+  .cmtreponsive {
+
+    width: 100%;
+  }
+
+  .responsive {}
+
+  .cmtResposev {
+    display: block;
+  }
+
+  .commentaireinput[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555;
+    font-size: x-small;
+    margin-left: 27px;
+
+
+  }
+  .max{
+    display: none;
+  }
+
+  .create__second {
+    width: 100%;
+    border-top: 1px solid #f0f2f5;
+    margin-top: 12px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  ;
+
+  .image {
+    display: none
+  }
+
+  ;
+
+  .create__first-img span img {
+    display: none;
+  }
+}
+
+@media all and (max-width:1024px) {
+  .post .comment {
+    /* display: list-item; */
+    display: flow-root;
+    margin-left: -4px;
+  }
+
+  .insidecomment {
+
+    /* display: flow-root;
+    width: -webkit-fill-available; */
+  }
+
+  /* .cmtreponsive {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100%;
+  } */
+
+  .resp{
+    display: flex;
+  }
+
+
+}
+
+@media all and (max-width:950px) {
+  .create__second {
+    width: 100%;
+    border-top: 1px solid #f0f2f5;
+    margin-top: 12px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .icon{
+    left: 77%;
+    top: 20%;
+    width: 11%;
+  }
+
+}
+@media all and (max-width:300px) {
+  /* .responsive {
+    width: 100%;
+    margin-top: 7px;
+  
+  } */
+  .create__second {
+    width: 100%;
+    border-top: 1px solid #f0f2f5;
+    margin-top: 12px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+ 
+
+}
+
+
+
+
+
+/****************************************************/
